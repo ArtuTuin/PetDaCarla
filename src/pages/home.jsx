@@ -1,13 +1,27 @@
 import "../styles/home.css";
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate();
+  
+    const irPerfil = () => {
+      navigate('/perfil');
+    };
   return (
-    <div className="home-container">
+    <body>
+      <div className="navbar">
+  <div className="espaco-vazio" /> {}
+  <h1 className="titulo">PET DA CARLA</h1>
+  <button className="botaoPerfil" onClick={irPerfil}>
+    PERFIL</button>
+</div>
+
+
       <section className="hero">
         <h1>Seja Bem vindo!</h1>
         <img src="src/assets/cachorropata.png" />
         <br />
-        <button>CONHEÇA NOSSOS SERVIÇOS</button>
+        <button class="botaoConheca">CONHEÇA NOSSOS SERVIÇOS</button>
       </section>
 
       <section className="about">
@@ -22,14 +36,14 @@ function Home() {
           <div className="product-item"></div>
           <div className="product-item"></div>
         </div>
-        <button>CONHEÇA MAIS PRODUTOS</button>
+        <button class="botaoConheca">CONHEÇA MAIS PRODUTOS</button>
       </section>
 
       <section className="location">
         <p className="qr-text">Aponte o celular para o QR code abaixo para ser direcionado para o endereço no Google Maps</p>
         <div className="qr-code">[QR CODE]</div>
       </section>
-    </div>
+    </body>
   );
 }
 

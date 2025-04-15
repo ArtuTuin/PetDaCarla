@@ -1,11 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
-.home-container {
+body {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    
+    
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffa952;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .botaoPerfil{
+    background-color: #222;
+    border: 2px solid #222;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    height:50px;
+    width: 150px;
+    font-weight: bold;
+  }
+  .botaoPerfil:hover {
+    border: 2px solid rgb(255, 255, 255);  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+.botaoConheca{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  }
+  .botaoConheca:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
   }
   
   .hero {
-    background-color: #f4a261;
+    background-color: #fc9b4c;
     padding: 20px;
+    height: 700px;
   }
   
   .hero h1 {
@@ -17,17 +76,12 @@
     margin: 10px 0;
   }
   
-  .hero button {
-    padding: 10px 20px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-  }
   
   .about {
     background-color: #222;
     color: white;
     padding: 20px;
+    height: 700px;
   }
   
   .highlight {
@@ -37,8 +91,9 @@
   }
   
   .products {
-    background-color: #f4a261;
+    background-color: #fc9b4c;
     padding: 20px;
+    height: 700px;
   }
   
   .products-title {
@@ -63,5 +118,11 @@
   
   .qr-text {
     margin: 20px 0;
+  }
+  .location{
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    height: 700px;
   }
   
